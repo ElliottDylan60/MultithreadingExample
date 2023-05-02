@@ -16,7 +16,12 @@ C/C++ program written for Linux to simulate a colonization type game. There are 
 
 6) The game simulation continues until all the locations are conquered by a team or another. The winner is who has occupied all spots or there is a draw, -meaning that each team owns the same number of locations. No spot on the map should be unoccupied.
 
-## Compile
+## Notes
+
+### Compile
 ```
 g++ main.cpp board.h -pthread
 ```
+### Executable
+
+The executable works like this: `./a.out 10 20 2 3` which means team A will have two (T1=2) players, team B will have 3 (T2=3) players and the map has 10 rows (M) and 20 columns (N).
